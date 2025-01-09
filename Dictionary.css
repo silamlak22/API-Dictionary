@@ -1,0 +1,148 @@
+body{
+    margin:0;
+    padding: 0;
+    background: linear-gradient(180deg, #006400 , #808000);
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width: 600px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius:8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: #333;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"]{
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 50px;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #DCDCDC;
+      outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 10px rgba(0, 100, 00, 1); /* Add a blue glow effect */
+  background-color: #f0f8ff;  /* Change background color */
+}
+
+input[type="text"]::placeholder {
+    color: gray; /* Change the text color */
+    font-size: 16px; /* Adjust font size */
+    font-style: italic; /* Make it italic */
+    opacity: 0.8; /* Adjust transparency */
+    width: 300px;
+    padding: 10px;
+  }
+
+button{
+    padding: 10px 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #006400;
+    cursor: pointer;
+    color: #f4f4f4;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: #DCDCDC; /* Slightly darker green */
+    transform: scale(1.1); /* Makes the button grow slightly */
+    color: #006400;
+  }
+
+.resultContainer{
+    display: none;
+    background-color:#f4f4f4 ;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow:0 3px 6px rgba(0, 0, 0, 0.2) ;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2{
+    color: #333;
+}
+
+#wordDescription{
+       margin-top: 10px;
+       margin-bottom: 10px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+#audioContainer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#audioButton{
+    padding: 10px;
+    font-size: 24px;
+    background-color:#006400 ;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#audioButton:hover{
+    background-color: #DCDCDC; /* Slightly darker green */
+    transform: scale(1.1); /* Makes the button grow slightly */
+    color: #006400;
+}
